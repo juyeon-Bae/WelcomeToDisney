@@ -1,0 +1,49 @@
+#footer{
+    width: 100%;
+    height: var(--footerHeight);
+    font-family: 'Pretendard-Regular';
+    background: #070053;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+}
+
+ .logo{
+    margin-top: 110px;
+ }
+.infos{
+    display: flex;
+    justify-content: center;
+    column-gap: var(--footergap);
+    margin-top: 40px;
+}
+
+.info{
+    font-size: var(--detailSize);
+    color: var(--white);
+    cursor: pointer;
+    
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.address{
+    color: var( --color2);
+    font-size: var(--navSize);
+    margin-top: 6px;
+}
+.detail{
+    margin-top: 40px;
+}
+
+.message, .code{
+    color: var(--color2);
+    font-size: var(--detailSize);
+    margin-top: 40px;
+}
+
+ 

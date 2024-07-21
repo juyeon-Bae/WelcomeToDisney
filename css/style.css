@@ -27,9 +27,9 @@
     --textSize: 0.625rem;
 
     /*footer*/
-    --footerHeight: 620px;
+    --footerHeight: 550px;
     --footergap: 60px;
-    --rowgap: 40px
+    
 }
 
 *{
