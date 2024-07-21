@@ -1,0 +1,45 @@
+:root{
+    /*nav*/
+    --navheight: 60px;
+    --navgap: 207px;
+
+    /*font color*/
+    --white: #FFFFFF; 
+    --color1: #000000;
+    --color2: #9E9E9E; 
+
+    /*font size*/
+    --navSize: 0.875rem;
+    --basicSize : 1rem;
+    --titleSize: 4.375rem;
+    --introduction : 2.25rem;
+    --detailSize: 0.75rem;
+    --textSize: 0.625rem;
+
+    /*footer*/
+    --footerHeight: 620px;
+    --footergap: 60px;
+    --rowgap: 40px
+}
+/* nav */
+body{
+    font-family: var(--bodycolor);
+    background-color: #061451;
+}
+body>header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+nav.container{
+    background-color: var(--primary-color);
+    height: var(--nav-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    color: var(--white);
+    font-size: var(--navSize);
+}
+
