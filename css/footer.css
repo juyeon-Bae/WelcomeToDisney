@@ -3,6 +3,8 @@
     height: var(--footerHeight);
     font-family: 'Pretendard-Regular';
     background: #070053;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .images{
@@ -15,21 +17,30 @@
  }
 .infos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     column-gap: var(--footergap);
     margin-top: 40px;
+    
+}
+.line{
+    display: flex;
+    column-gap: var(--footergap);
 }
 
 .info{
     font-size: var(--detailSize);
     color: var(--white);
     cursor: pointer;
-    
+    text-align: center;
+   
 }
 .information{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    text-align: center;
 }
 .address{
     color: var( --color2);
@@ -37,13 +48,55 @@
     margin-top: 6px;
 }
 .detail{
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .message, .code{
     color: var(--color2);
     font-size: var(--detailSize);
-    margin-top: 40px;
+    margin-top: 30px;
+}
+ 
+@media screen and (max-width:870px){
+     #footer{
+        margin-top: calc(10px - 80px);
+        padding: 10px 0;
+        
+     }
+    .infos{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: auto;
+    }
+    .info{
+        text-align: center;
+        margin-bottom: 12px; 
+    }
+
+    .line{
+       display: flex;
+       justify-content: center;
+       width: 100%;
+    }
+    
+    .address{
+        font-size: 0.75rem;
+    }
 }
 
+@media screen and (max-width:430px) {
+   .information{
+    display: flex;
+    flex-wrap: wrap;
+   }
+    .address, .message, .code{
+        font-size: 0.75rem;
+    }
+
+    .address{
+        margin-left: 18px;
+        margin-right: 18px;
+    }  
+}
  
