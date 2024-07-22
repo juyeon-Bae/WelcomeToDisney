@@ -1,0 +1,28 @@
+.nav{
+    display: flex;
+    height: var(--navheight);
+    font-family: 'Pretendard-Regular';
+    background: #070053;
+    box-sizing: border-box;
+}
+.logo{
+    justify-content: center;
+}
+.nav-logo{
+    display: flex;
+}
+.nav-item{
+    display: flex;
+}
+.nav-items{
+    color: white;
+    display: flex;
+}
+
+.nav-language{
+    display: flex;
+}
+.nav-sign{
+    display: flex;
+    justify-content: flex-end;
+}
