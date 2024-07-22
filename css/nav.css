@@ -5,6 +5,7 @@ body{
 .nav{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     height: var(--navheight);
     font-family: 'Pretendard-Regular';
@@ -39,4 +40,30 @@ body{
 
 .nav-language,.nav-sign{ 
     margin-left: 20px;
+}
+@media screen and (max-width:870px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-items{
+        align-items: center;
+
+    }
+    .nav-item, .nav-language, .nav-sign{
+        margin: 5px 0;
+    }
+}
+@media screen and (max-width:430px){
+    .nav-items{
+        align-items: center;
+    }
+    .nav-item,.nav-language{
+        margin: 5px 0;
+        padding: 5px;
+    }
+    .nav-sign, .nav-language{
+        margin: 5px 0;
+        padding: 5px;
+    }
 }
