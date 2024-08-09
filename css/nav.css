@@ -3,13 +3,12 @@
     background-color: #061451;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     align-items: center;
     font-family: 'Pretendard-Regular';
     padding: 0 20px;
     color: var(--white);
     width: 100%;
-    
+
     position: fixed;
     top: 0;
     left: 0;
@@ -17,19 +16,18 @@
     z-index: 1;
 }
 a{
-    color: var(--white);
+    color: var(--white)
+  
 }
-
 .nav-menu{
     display: flex;
     column-gap: 207px;
 }
-
 .nav-side{
     display: flex;
     column-gap: 44px;
     padding: 25px;
-    
+
 }
  .nav-toggle{
     display: none;
@@ -74,7 +72,7 @@ a{
     .nav-menu{
         column-gap: 100px;
     }
-    
+
 }
 @media (max-width: 890px) {  
     .nav-menu{
@@ -114,7 +112,7 @@ a{
     .toggleActive {
         display: block;
     }
-   
+
     .show {
         display: flex;
     }
