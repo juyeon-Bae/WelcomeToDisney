@@ -1,69 +1,121 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-.nav{
+#nav{
+    height: var(--navheight);
+    background-color: #061451;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    height: var(--navheight);
     font-family: 'Pretendard-Regular';
-    background: #070053;
     padding: 0 20px;
-    box-sizing: border-box;
+    color: var(--white);
+    width: 100%;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+a{
+    color: var(--white);
 }
 
-.nav-logo{
+.nav-menu{
     display: flex;
-    align-items: center;
+    column-gap: 207px;
 }
 
-.nav-items{
+.nav-side{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    column-gap: 44px;
+    padding: 25px;
+    
 }
-.nav-item{
-    padding: 30px;
-}
-.nav-language,.nav-sign,.nav-item{
+ .nav-toggle{
+    display: none;
+ }
+.bi-list, .bi-x{
     color: white;
-    display: flex;
-    align-items: center;
+    font-size: 30px;
     cursor: pointer;
-    margin: 0 10px;
+}
+.blur{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
 }
 
-.nav-language,.nav-sign{ 
-    margin-left: 20px;
+.blur.show{
+    display: block;
 }
-@media screen and (max-width:870px){
-    .nav{
+.toggleActive {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #061451;
+    z-index: 999;
+    padding: 20px;
+}
+@media (max-width: 1284px) {
+    .nav-menu{
+        column-gap: 140px;
+    }
+}
+
+@media (max-width: 1080px) {  
+    .nav-menu{
+        column-gap: 100px;
+    }
+    
+}
+@media (max-width: 890px) {  
+    .nav-menu{
+        column-gap: 60px;
+    }
+    .nav-item, .nav-side{
+        font-size: 13px;
+    }   
+}
+@media (max-width: 768px) {
+    .nav-menu, .nav-side {
+        display: none;  
         flex-direction: column;
+        width: 100%;
+    }
+    .nav-toggle{
+        display: block;
         align-items: center;
     }
-    .nav-items{
-        align-items: center;
 
+    .nav-side{
+        flex-direction: column;
+        background-color: #F0F4FF;
+        width: 197px;
+        height: 890px;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        display: none;/* 처음에 안 보여지게 함 */
     }
-    .nav-item, .nav-language, .nav-sign{
-        margin: 5px 0;
+    .bi-x-lg {
+        font-size: 1.3rem;
     }
-}
-@media screen and (max-width:430px){
-    .nav-items{
-        align-items: center;
+
+    /* 토글 기능 클래스 */
+    .toggleActive {
+        display: block;
     }
-    .nav-item,.nav-language{
-        margin: 5px 0;
-        padding: 5px;
-    }
-    .nav-sign, .nav-language{
-        margin: 5px 0;
-        padding: 5px;
+   
+    .show {
+        display: flex;
     }
 }
