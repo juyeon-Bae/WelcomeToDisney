@@ -1,4 +1,4 @@
-#nav{
+#nav {
     height: var(--navheight);
     background-color: #061451;
     display: flex;
@@ -15,97 +15,114 @@
     right: 0;
     z-index: 1;
 }
-a{
+
+a {
     color: var(--white)
-  
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     column-gap: 207px;
 }
-.nav-side{
+
+.nav-side {
     display: flex;
     column-gap: 44px;
     padding: 25px;
-
 }
- .nav-toggle{
+
+.nav-toggle,
+.log {
     display: none;
- }
-.bi-list, .bi-x{
+}
+
+.bi-list,
+.bi-x {
     color: white;
     font-size: 30px;
     cursor: pointer;
 }
-.blur{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 998;
-}
 
-.blur.show{
-    display: block;
-}
-.toggleActive {
-    display: flex !important;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #061451;
-    z-index: 999;
-    padding: 20px;
-}
-@media (max-width: 1284px) {
-    .nav-menu{
-        column-gap: 140px;
+@media (min-width: 1285px) and (max-width: 1400px) {
+    .nav-menu {
+        column-gap: 130px;
     }
 }
 
-@media (max-width: 1080px) {  
-    .nav-menu{
+@media (min-width: 1081px) and (max-width: 1300px) {
+    .nav-menu {
+        column-gap: 90px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .nav-menu {
         column-gap: 100px;
     }
-
 }
-@media (max-width: 890px) {  
-    .nav-menu{
+
+@media (min-width: 800px) and (max-width: 980px) {
+    .nav-menu {
         column-gap: 60px;
     }
-    .nav-item, .nav-side{
-        font-size: 13px;
-    }   
+
+    .nav-item,
+    .nav-side {
+        font-size: 15px;
+    }
 }
-@media (max-width: 768px) {
-    .nav-menu, .nav-side {
-        display: none;  
+
+@media (min-width: 781px) and (max-width: 800px) {
+    .nav-menu {
+        column-gap: 40px;
+    }
+}
+
+@media (max-width: 780px) {
+    .nav-menu,
+    .nav-side {
+        display: none;
         flex-direction: column;
         width: 100%;
+    }
+    .log{
+        display: block;
     }
     .nav-toggle{
         display: block;
         align-items: center;
     }
 
-    .nav-side{
-        flex-direction: column;
-        background-color: #F0F4FF;
+    .nav-menu {
+        background-color: #182f93;
         width: 197px;
         height: 890px;
         position: absolute;
-        right: 0;
         top: 100%;
+        right: 0;
         z-index: -1;
-        display: none;/* 처음에 안 보여지게 함 */
     }
+    
+    .nav-item{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .nav-item:hover{
+        transform: scale(1.08);
+        transition: transform 0.6s ease-in-out;
+    }
+    .nav-item a:hover{
+        color: rgb(234, 234, 234);
+    }
+    .nav-item a,
+    .side-item a {
+        color: white;
+    }
+
     .bi-x-lg {
         font-size: 1.3rem;
+        cursor: pointer;
     }
 
     /* 토글 기능 클래스 */
