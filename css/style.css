@@ -19,12 +19,12 @@
     --color2: #9E9E9E;
 
     /*font size*/
-    --navSize: 0.875rem;
-    --basicSize : 1rem;
-    --titleSize: 4.375rem;
-    --introduction : 2.25rem;
-    --detailSize: 0.75rem;
-    --textSize: 0.625rem;
+    --navSize: 0.875rem; /* 14px */
+    --basicSize : 1rem; /* 16px */
+    --titleSize: 4.375rem; /* 70px */
+    --introduction : 2.25rem; /* 36px */
+    --detailSize: 0.75rem; /* 12px */
+    --textSize: 0.625rem; /* 10px */
 
     /*footer*/
     --footerHeight: 550px;
