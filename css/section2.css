@@ -1,0 +1,124 @@
+#section {
+    width: 100%;
+    font-family: 'Pretendard-Regular';
+    display: flex;
+    padding-top: 10vh;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#movieCompany-wrapper {
+    margin-left: 80.71px;
+}
+ 
+.characters {
+    width: 100%;
+    max-width: 668.29px;
+    height: 408px;
+}
+
+.introduce {
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: var(--introduction);
+    font-weight: 600;
+}
+
+.introduce2 {
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: var(--color2);
+    margin: 12px 0 40px 0;
+    margin-top: 12px;
+}
+
+.company1, .company2 {
+    display: flex;
+    width: 100%;
+}
+
+.company1 {
+    column-gap: 140px;
+    margin-bottom: 24px;
+}
+
+.company2 {
+    column-gap: 173px;
+}
+
+.starwards, .pixar, .marvel, .disney {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.text2{
+    margin: 4px 0 0 30px;
+}
+
+@media (min-width:801px) and  (max-width:1500px){
+   .allCharacter{
+        width: 600px;
+        height: auto;
+    }
+    .introduce{
+        font-size: 30px;
+    }
+    .company1{
+        column-gap: 20px;
+    }
+    .company2{
+        column-gap: 55px;
+    }
+}
+
+@media (min-width:801px) and  (max-width:1102px){
+    .introduce{
+        margin-top: 20px;
+    }
+}
+@media (min-width:1103px) and  (max-width:1120px){
+   
+    .introduce{
+        font-size: 33px;
+    }
+}
+
+
+@media (max-width:800px) {
+    #section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #movieCompany-wrapper{
+        margin-top: 20px;
+        align-items: center;
+         
+    }
+    .introduce, .introduce2, .company1, .company2{
+        margin-left: -30px;
+    }
+    .introduce{
+        font-size: 30px;
+    }
+    .company1{
+        column-gap: 10px;
+    }
+    .company2{
+        column-gap: 40px;
+    }
+    .text{
+        margin-left: 15px;
+        font-size: 14px;
+    }
+    .text2{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+}
