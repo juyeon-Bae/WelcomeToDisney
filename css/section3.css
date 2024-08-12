@@ -1,1 +1,56 @@
- 
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+/*  font-family: 'EB Garamond', serif;*/
+
+:root{
+    /*nav*/
+    --navheight: 60px;
+    --navgap: 207px;
+
+    /*font color*/
+    --white: #FFFFFF;
+    --color1: #000000;
+    --color2: #9E9E9E;
+
+    /*font size*/
+    --navSize: 0.875rem; /* 14px */
+    --basicSize : 1rem; /* 16px */
+    --titleSize: 4.375rem; /* 70px */
+    --introduction : 2.25rem; /* 36px */
+    --detailSize: 0.75rem; /* 12px */
+    --textSize: 0.625rem; /* 10px */
+
+    /*footer*/
+    --footerHeight: 550px;
+    --footergap: 60px;
+    
+}
+.text-item{
+    font-weight: bold;
+    font-size: var(--introduction);
+    
+}
+.detail-item{
+    font-size: var(--detailSize);
+    color: #9E9E9E;
+}
+.princess-img{
+    display: block;
+    position: absolute;
+    width: 948px;
+    height: 534px;
+    left: 972px;
+    z-index: 1;
+}
+.note-img{
+    display: block;
+    position: absolute;
+    
+    z-index: 1;
+}
