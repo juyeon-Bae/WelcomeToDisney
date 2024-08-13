@@ -25,3 +25,14 @@
     
     z-index: 1;
 }
+@media (min-width:801px) and  (max-width:1500px){
+    .note-img{
+        z-index: 2;
+    }
+    .princess-img{
+        z-index: 1;
+    }
+}
+@media (max-width:800px){
+
+}
